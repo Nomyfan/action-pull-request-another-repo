@@ -5,7 +5,7 @@ RUN apk update && \
     apk add git && \
     apk add go && \
     apk add make && \
-    git clone https://github.com/cli/cli.git gh-cli && \
+    git clone --branch v1.14.0 https://github.com/cli/cli.git gh-cli && \
     cd gh-cli && \
     make && \
     mv ./bin/gh /usr/local/bin/
